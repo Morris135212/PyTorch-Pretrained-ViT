@@ -13,7 +13,10 @@ from .configs import PRETRAINED_MODELS
 
 
 class PositionalEmbedding1D(nn.Module):
-    """Adds (optionally learned) positional embeddings to the inputs."""
+    """
+    Adds (optionally learned) positional embeddings to the inputs.
+    添加可学习的位置编码参数
+    """
 
     def __init__(self, seq_len, dim):
         super().__init__()
